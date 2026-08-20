@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+}
+.navegacao{
+    background-color: rgb(240, 240, 240);
+}
+.nav2{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-family: "montserrat";
+    font-weight: 500;
+    
+}
+
+.logo{
+    font-size: 30px;
+    font-family: "Nunito";
+    color: #BF9B7A !important;
+}
+.caixa{
+    border-radius: 6%;
+    margin-top: 20%;
+}
+.coxinha{
+    border-radius: 6%;
+}
+.sobre{
+    margin-top: 20%;
+}
