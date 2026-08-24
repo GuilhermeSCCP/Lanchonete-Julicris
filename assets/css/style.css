@@ -8,6 +8,7 @@
 body{
     height: 100vh;
 }
+
 .navegacao{
     background-color: rgb(240, 240, 240);
 }
@@ -17,7 +18,6 @@ body{
     gap: 30px;
     font-family: "montserrat";
     font-weight: 500;
-    
 }
 
 .logo{
@@ -25,13 +25,33 @@ body{
     font-family: "Nunito";
     color: #BF9B7A !important;
 }
+
 .caixa{
     border-radius: 6%;
     margin-top: 20%;
 }
-.coxinha{
-    border-radius: 6%;
+
+.img-principal {
+    width: 100vw;
+    opacity: 90%;
 }
+
 .sobre{
-    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 500px;
+}
+
+.alert {
+    display: flex;
+    margin-bottom: 0px;
+    padding: 10px;
+    justify-content: center;
+    font-family: "Nunito";
+    font-size: 12px;
+    border-radius: 0px;
+}
+
+.row {
+    --bs-gutter-x: 0px;
 }
