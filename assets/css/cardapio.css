@@ -11,38 +11,44 @@
     --text-color: #ffffff;
     --bg-section: #000000;
     --text-color2: #000000; 
+    --line-color: #858585;
 }
 
 header{
-    background-color: var(--bg-header);
+    background-image: url(../images/fundo_banner_cardapio.png);
+    background-position: cover;
     color: var(--text-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 3rem 0;
+    padding: 10rem;
 }
 
 section h2 {
-    background-color: var(--bg-section);
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
+    color: var(--text-color2);
+    text-align: left;
+    padding: 20px 0 0 20px;
+    margin-left: 2.5rem;
 }
 
-.caixas_1 {
-    margin-top: 2rem;
+.caixas_1, .caixas_2, .caixas_3{
+    background-image: url(../images/fundo_banner_cardapio.png);
+    background-position: cover;
+    border-top: 1px solid var(--line-color);
+    margin-top: 0.1rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 5rem 3rem;
     align-items: center;
-    padding: 10px;
+    padding: 50px 10px 10px 10px;
+    margin: 0 3.5rem 1.5rem;
 }
 
 .card{
     border-radius: 16px !important;
-    border: 1.5px solid #db8400 !important;
+    border: 2px solid #db8400 !important;
 }
 
 
@@ -52,30 +58,8 @@ section h2 {
 }
 
 .card-body {
-    background-color: var(--bg-section);
-    color: #ffffff !important;
-    height: 12rem;
+    height: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
-
-.caixas_2{
-    margin-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 5rem 3rem;
-    align-items: center;
-    padding:10px
-}
-
-.caixas_3{
-    margin-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 5rem 3rem;
-    align-items: center;
-    padding:10px
 }
