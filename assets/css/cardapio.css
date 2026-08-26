@@ -8,10 +8,17 @@
 
 :root{
     --bg-header: #db8400;
+    --bg-section: #6b4425;
+    --bg-caixas:rgba(0, 0, 0, 0.5);
+    --bg-footer: rgb(104, 63, 25);
+    --bg-botoes: rgba(0, 0, 0, 0.8);
     --text-color: #ffffff;
-    --bg-section: #000000;
     --text-color2: #000000; 
-    --line-color: #858585;
+    --line-color: #a37f48;
+    --line-color2: rgba(212, 198, 150, 0.404);
+    --whatsapp: linear-gradient(135deg, #075e54, #128c7e, #25d366);
+    --instagram: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+    --facebook: linear-gradient(135deg, #0062e0, #00c6ff); 
 }
 
 header{
@@ -26,16 +33,23 @@ header{
 }
 
 section h2 {
-    color: var(--text-color2);
-    text-align: left;
-    padding: 20px 0 0 20px;
-    margin-left: 2.5rem;
+    background-color: var(--bg-caixas);
+    color: var(--text-color);
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 0 2rem 0;
 }
 
-.caixas_1, .caixas_2, .caixas_3{
-    background-image: url(../images/fundo_banner_cardapio.png);
+main{
+    background-image: url(../images/fundo_banner2_cardapio.png);;
     background-position: cover;
-    border-top: 1px solid var(--line-color);
+    padding: 0 0 10rem 0;
+}
+
+.caixas_1, .caixas_2{
+    background-color: var(--bg-caixas);
+    border: 1px solid var(--line-color);
     margin-top: 0.1rem;
     display: flex;
     flex-wrap: wrap;
@@ -44,22 +58,104 @@ section h2 {
     align-items: center;
     padding: 50px 10px 10px 10px;
     margin: 0 3.5rem 1.5rem;
+    border-radius: 1rem;
+}
+.caixas_3{
+    background-color: var(--bg-caixas);
+    border: 1px solid var(--line-color);
+    margin-top: 0.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5rem 3rem;
+    align-items: center;
+    padding: 50px 10px 10px 10px;
+    margin: 0 3.5rem;
+    border-radius: 1rem
 }
 
 .card{
     border-radius: 16px !important;
-    border: 2px solid #db8400 !important;
+    border: 2px solid var(--line-color) !important;
 }
-
 
 .card-img-top{
     height: 16rem;
-    border-radius: inherit !important;
+    border-radius: 16px 16px 0 0 !important;
 }
 
 .card-body {
+    background-image: url(../images/fundo_banner3_cardapio.png);   
     height: 15rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    border-radius: 0 0 14px 14px;
+}
+.card-body p, .card-body h5{
+    color: var(--text-color);
+}
+footer {
+    background-color: var(--bg-footer);
+    color: var(--text-color);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    font-size: 20px;
+    border-top: 3px solid var(--line-color2);
+}
+
+footer ul a{
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.botoes{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.fa-whatsapp{
+    background: var(--whatsapp);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+}
+.fa-instagram{
+    background: var(--instagram);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+}
+.fa-facebook{
+    background: var(--facebook);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+}
+@media (max-width: 768px){
+    header{
+        padding: 5rem 0 5rem 0;
+    }
+    .card-body{
+        height: 10rem;
+    }
+    .card-img-top{
+        height: 10rem;
+    }
 }
