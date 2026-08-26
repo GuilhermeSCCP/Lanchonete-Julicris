@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
 
 body{
     height: 100vh;
@@ -20,6 +25,10 @@ body{
     font-weight: 500;
 }
 
+main {
+    margin-top: 133px;
+}
+
 .logo{
     font-size: 30px;
     font-family: "Nunito";
@@ -31,15 +40,31 @@ body{
     margin-top: 20%;
 }
 
-.img-principal {
+/* .img-principal {
     width: 100vw;
-    opacity: 90%;
-}
+    background-size: cover;
+    height: 50%;
+    position: relative;
+    z-index: -1;
+    height: 700px;
+} */
 
 .sobre{
     display: flex;
-    flex-direction: column;
-    margin-top: 500px;
+    justify-content: center;
+    gap: 100px;
+    z-index: -1;
+    position: relative;
+    margin-top: 233px;
+    align-items: center;
+}
+
+.sobre-texto {
+    width: 600px;
+}
+
+.sobre-texto h2 {
+    margin-bottom: 30px;
 }
 
 .alert {
@@ -50,6 +75,7 @@ body{
     font-family: "Nunito";
     font-size: 12px;
     border-radius: 0px;
+    width: 100%;
 }
 
 .row {
