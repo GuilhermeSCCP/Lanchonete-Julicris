@@ -20,17 +20,13 @@ body{
 .nav2{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 2rem;
     font-family: "montserrat";
     font-weight: 500;
 }
 
-main {
-    margin-top: 133px;
-}
-
 .logo{
-    font-size: 30px;
+    font-size: 2rem;
     font-family: "Nunito";
     color: #BF9B7A !important;
 }
@@ -40,44 +36,75 @@ main {
     margin-top: 20%;
 }
 
-/* .img-principal {
-    width: 100vw;
-    background-size: cover;
-    height: 50%;
-    position: relative;
-    z-index: -1;
-    height: 700px;
-} */
-
 .sobre{
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 6rem;
     z-index: -1;
     position: relative;
-    margin-top: 233px;
+    margin-top: 16rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .sobre-texto {
-    width: 600px;
+    width: 37.5rem;
 }
 
 .sobre-texto h2 {
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
-.alert {
+#alerta-cabecalho {
     display: flex;
     margin-bottom: 0px;
-    padding: 10px;
+    padding: 0.7rem;
     justify-content: center;
     font-family: "Nunito";
-    font-size: 12px;
+    font-size: 0.75rem;
+    font-weight: 800;
     border-radius: 0px;
     width: 100%;
 }
 
+#alerta-cardapio {
+    display: flex;
+    margin-bottom: 0px;
+    padding: 0.7rem;
+    justify-content: center;
+    gap: 4rem;
+    border-radius: 0px;
+    width: 100%;
+    margin-top: 8rem;
+    height: 7rem;
+    font-family: 'Nunito';
+    font-size: 2rem;
+    font-weight: 800;
+    align-items: center;
+}
+
+#alerta-cardapio span {
+    width: 16rem;
+}
+
+#alerta-cardapio button {
+    width: 19rem;
+    height: 3rem;
+    border-radius: 2.5rem;
+    font-family: 'Nunito';
+    font-weight: 800;
+}
+
+.cn2, .cn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
 .row {
     --bs-gutter-x: 0px;
+}
+
+.d-block {
+    border-radius: 1.5rem;
 }
