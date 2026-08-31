@@ -9,10 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b433562c70.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="nav navegacao">
-    <div class="alert alert-warning" role="alert">PEÇA PELO DELIVERY</div>
+    <div id="alerta-cabecalho" class="alert alert-warning" role="alert">PEÇA PELO DELIVERY</div>
     <div class="container p-3">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         
@@ -26,7 +27,7 @@
             <a href="#" class="nav-link px-2 link-secondary logo">Julicris</a>
             </li>
             <li>
-            <a href="#" class="nav-link px-2 link-body-emphasis">Cardápio</a>
+            <a href="cardapio.html" class="nav-link px-2 link-body-emphasis">Cardápio</a>
             </li>
             <li>
             <a href="#" class="nav-link px-2 link-body-emphasis">Fale conosco</a>
@@ -49,13 +50,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img src="assets/images/unnamed.webp" class="d-block w-100" alt="...">
+                <img src="assets/images/unnamed.webp" class="d-blocks w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="..." class="d-blocks w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="..." class="d-blocks w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -72,7 +73,46 @@
                 <p>A Julicris é uma lanchonete tradicional criada para oferecer aos seus clientes uma experiência saborosa, acolhedora e de qualidade. Com um ambiente agradável e familiar, buscamos transformar cada visita em um momento especial.<br><br>Nosso cardápio reúne opções preparadas com carinho, utilizando ingredientes selecionados e pensando sempre no sabor e na satisfação de nossos clientes. Seja para fazer uma refeição rápida, encontrar os amigos ou simplesmente aproveitar um bom lanche, a Julicris está pronta para receber você.<br><br>Julicris — sabor, tradição e qualidade em cada lanche!</p>
             </div>
         </div>
+        <div id="alerta-cardapio" class="alert alert-warning" role="alert"><span class="cnc"><div class="cn">Conheça Nosso</div> <div class="cn2">Cardápio</div></span><a href="cardapio.html"><button type="button" href="cardapio.html" class="btn btn-outline-danger">Cardápio</button></a></div>
+        <div class="cards-cardapio">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/images/assado de carne.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Salgados</h5>
+                    <p class="card-text">Coxinhas, pastéis, risoles e muito mais! Salgados preparados com ingredientes selecionados e muito sabor.</p>
+                    <a href="#" class="btn btn-primary">Peça Já</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/images/bolinha_de_presunto.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Salgados de Festa</h5>
+                    <p class="card-text">Salgados preparados especialmente para suas comemorações, perfeitos para festas, aniversários e eventos.</p>
+                    <a href="#" class="btn btn-primary">Peça Já</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="assets/images/guarana_aura.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bebidas</h5>
+                    <p class="card-text">Refrigerantes, sucos e outras opções para acompanhar seu lanche e deixar sua refeição completa.</p>
+                    <a href="#" class="btn btn-primary">Peça Já</a>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer>
+        <ul>
+            <li><h5 id="redes_sociais">© 2026 JULICRIS - Todos Direitos Reservados </h5></li>
+            <li>
+                <div class="botoes">
+                    <a href="https://api.whatsapp.com/send?phone=553291640246" target="_blank"><h1 class="fa-brands fa-whatsapp"></h1></a>
+                    <a href="https://www.instagram.com/julicrisjf/" target="_blank"><h1 class="fa-brands fa-instagram"></h1></a>
+                    <a href="https://www.facebook.com/julicrisjf/mentions/" target="_blank"><h1 class="fa-brands fa-facebook" ></h1></a>
+                </div>
+            </li>
+        </ul>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </body>

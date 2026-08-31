@@ -4,33 +4,57 @@
     box-sizing: border-box;
 }
 
+:root{
+    --bg-nav: rgb(88, 54, 21);
+    --bg-button: #db8400;
+    --bg-section: #6b4425;
+    --bg-caixas:rgba(0, 0, 0, 0.5);
+    --bg-footer: rgb(104, 63, 25);
+    --bg-botoes: rgba(0, 0, 0, 0.8);
+    --text-color: #ffffff;
+    --text-color2: #000000; 
+    --text-color3: rgb(240, 145, 2);
+    --line-color: #a37f48;
+    --line-color2: rgba(212, 198, 150, 0.404);
+    --line-color3: rgb(240, 145, 2);
+    --julicris: rgb(255, 123, 0, 1);
+    --whatsapp: linear-gradient(135deg, #075e54, #128c7e, #25d366);
+    --instagram: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+    --facebook: linear-gradient(135deg, #0062e0, #00c6ff); 
+}
+
 header {
     top: 0;
     position: fixed;
     width: 100%;
+    z-index: 1001;
 }
 
 body{
     height: 100vh;
+    background-image: url(../images/fundo_banner2_cardapio.png);
 }
 
 .navegacao{
     background-color: rgb(240, 240, 240);
 }
-.nav2{
+
+.nav2 {
     display: flex;
     align-items: center;
-    gap: 30px;
-    font-family: "montserrat";
+    justify-content: center;
+    gap: 2rem;
+    font-family: "Nunito";
     font-weight: 500;
 }
 
-main {
-    margin-top: 133px;
+header .container {
+    display: flex;
+    justify-content: center;
 }
 
 .logo{
-    font-size: 30px;
+    font-size: 2rem;
     font-family: "Nunito";
     color: #BF9B7A !important;
 }
@@ -40,44 +64,210 @@ main {
     margin-top: 20%;
 }
 
-/* .img-principal {
-    width: 100vw;
-    background-size: cover;
-    height: 50%;
-    position: relative;
-    z-index: -1;
-    height: 700px;
-} */
-
 .sobre{
     display: flex;
     justify-content: center;
-    gap: 100px;
-    z-index: -1;
-    position: relative;
-    margin-top: 233px;
+    padding: 1.5rem;
+    gap: 6rem;
+    margin-top: 16rem;
     align-items: center;
+    font-family: 'Familjen Grotesk';
+    font-size: 1.2rem;
+    background-color: #fff3cd;
 }
 
 .sobre-texto {
-    width: 600px;
+    width: 37.5rem;
 }
 
 .sobre-texto h2 {
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 }
 
-.alert {
+#alerta-cabecalho {
     display: flex;
     margin-bottom: 0px;
-    padding: 10px;
+    padding: 0.7rem;
     justify-content: center;
     font-family: "Nunito";
-    font-size: 12px;
+    font-size: 0.75rem;
+    font-weight: 800;
     border-radius: 0px;
     width: 100%;
+    background-color: #fff3cd !important;
+}
+
+#alerta-cardapio {
+    display: flex;
+    margin-bottom: 0px;
+    padding: 0.7rem;
+    justify-content: center;
+    gap: 4rem;
+    border-radius: 0px;
+    width: 100%;
+    margin-top: 8rem;
+    height: 9rem;
+    font-family: 'Nunito';
+    font-size: 2rem;
+    font-weight: 800;
+    align-items: center;
+}
+
+#alerta-cardapio span {
+    width: 16rem;
+}
+
+#alerta-cardapio button {
+    width: 19rem;
+    height: 3.5rem;
+    border-radius: 2.5rem;
+    font-family: 'Nunito';
+    font-weight: 900;
+    border: solid 2px;
+    font-size: 1.1rem;
+}
+
+.cn2, .cn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 .row {
     --bs-gutter-x: 0px;
+}
+
+.d-blocks {
+    border-radius: 1.5rem;
+}
+
+.card {
+    width: 18rem;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1rem;
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #ffb15c;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body {
+    background-image: url(../images/fundo_banner3_cardapio.png);
+    height: 270px;
+    text-align: center;
+    padding: 2rem 1.5rem;
+}
+.card .btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.card-title {
+    color: white;
+    font-family: "Nunito";
+    font-size: 1.7rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    color: white;
+    font-family: "Nunito";
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+}
+
+.card .btn {
+    width: 15rem;
+    border-radius: 2rem;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    font-family: "Nunito";
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.card .btn:hover {
+    background-color: white;
+    color: #ffb15c;
+}
+
+.cards-cardapio {
+    gap: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer {
+    background-color: #fff3cd;
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    border-top: 3px solid var(--line-color2);
+}
+
+footer ul a{
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+.botoes{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.fa-whatsapp{
+    background: var(--whatsapp);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+    transition:0.3s ease-in-out;
+}
+.fa-instagram{
+    background: var(--instagram);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+    transition: 0.3s ease-in-out;
+}
+.fa-facebook{
+    background: var(--facebook);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+    transition: 0.3s ease-in-out;
+}
+.fa-facebook:hover, .fa-instagram:hover, .fa-whatsapp:hover{
+    transform:scale(1.2);
 }
