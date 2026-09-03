@@ -1,18 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --bg-nav: rgb(88, 54, 21);
     --bg-button: #db8400;
     --bg-section: #6b4425;
-    --bg-caixas:rgba(0, 0, 0, 0.5);
+    --bg-caixas: rgba(0, 0, 0, 0.5);
     --bg-footer: rgb(104, 63, 25);
     --bg-botoes: rgba(0, 0, 0, 0.8);
     --text-color: #ffffff;
-    --text-color2: #000000; 
+    --text-color2: #000000;
     --text-color3: rgb(240, 145, 2);
     --line-color: #a37f48;
     --line-color2: rgba(212, 198, 150, 0.404);
@@ -20,7 +20,7 @@
     --julicris: rgb(255, 123, 0, 1);
     --whatsapp: linear-gradient(135deg, #075e54, #128c7e, #25d366);
     --instagram: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
-    --facebook: linear-gradient(135deg, #0062e0, #00c6ff); 
+    --facebook: linear-gradient(135deg, #0062e0, #00c6ff);
 }
 
 header {
@@ -30,13 +30,14 @@ header {
     z-index: 1001;
 }
 
-body{
+body {
     height: 100vh;
     background-image: url(../images/fundo_banner2_cardapio.png);
 }
 
-.navegacao{
-    background-color: rgb(240, 240, 240);
+.navegacao {
+    background-color: #583615;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
 }
 
 .nav2 {
@@ -48,28 +49,54 @@ body{
     font-weight: 500;
 }
 
+.nav2 a {
+    color: #fff3cd !important;
+    transition: 0.3s ease-in-out;
+}
+
+.nav2 a:hover {
+    color: #ffb15c !important;
+}
+
+.logo {
+    font-size: 2rem;
+    font-family: "Nunito";
+    color: #ff8a00 !important;
+    font-weight: 900;
+}
+
 header .container {
     display: flex;
     justify-content: center;
 }
 
-.logo{
-    font-size: 2rem;
+#alerta-cabecalho {
+    display: flex;
+    margin-bottom: 0;
+    padding: 0.7rem;
+    justify-content: center;
     font-family: "Nunito";
-    color: #BF9B7A !important;
+    font-size: 0.75rem;
+    font-weight: 800;
+    border-radius: 0;
+    width: 100%;
+    background-color: #ffb15c;
+    color: #583615;
+    border: none;
 }
 
-.caixa{
+.caixa {
     border-radius: 6%;
     margin-top: 20%;
 }
 
-.sobre{
+.sobre {
     display: flex;
     justify-content: center;
     padding: 1.5rem;
     gap: 6rem;
     margin-top: 16rem;
+    padding: 4rem 2rem;
     align-items: center;
     font-family: 'Familjen Grotesk';
     font-size: 1.2rem;
@@ -84,26 +111,13 @@ header .container {
     margin-bottom: 2rem;
 }
 
-#alerta-cabecalho {
-    display: flex;
-    margin-bottom: 0px;
-    padding: 0.7rem;
-    justify-content: center;
-    font-family: "Nunito";
-    font-size: 0.75rem;
-    font-weight: 800;
-    border-radius: 0px;
-    width: 100%;
-    background-color: #fff3cd !important;
-}
-
 #alerta-cardapio {
     display: flex;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding: 0.7rem;
     justify-content: center;
     gap: 4rem;
-    border-radius: 0px;
+    border-radius: 0;
     width: 100%;
     margin-top: 8rem;
     height: 9rem;
@@ -127,7 +141,7 @@ header .container {
     font-size: 1.1rem;
 }
 
-.cn2, .cn{
+.cn2, .cn {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -225,7 +239,7 @@ footer {
     border-top: 3px solid var(--line-color2);
 }
 
-footer ul a{
+footer ul a {
     color: var(--text-color);
     text-decoration: none;
     display: flex;
@@ -241,33 +255,37 @@ footer ul {
     flex-wrap: wrap;
     padding-left: 0;
 }
-.botoes{
+
+.botoes {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.fa-whatsapp{
+.fa-whatsapp {
     background: var(--whatsapp);
     padding: 1rem;
     border-radius: 1rem;
     font-size: 2.5rem;
-    transition:0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
-.fa-instagram{
+
+.fa-instagram {
     background: var(--instagram);
     padding: 1rem;
     border-radius: 1rem;
     font-size: 2.5rem;
     transition: 0.3s ease-in-out;
 }
-.fa-facebook{
+
+.fa-facebook {
     background: var(--facebook);
     padding: 1rem;
     border-radius: 1rem;
     font-size: 2.5rem;
     transition: 0.3s ease-in-out;
 }
-.fa-facebook:hover, .fa-instagram:hover, .fa-whatsapp:hover{
-    transform:scale(1.2);
+
+.fa-facebook:hover, .fa-instagram:hover, .fa-whatsapp:hover {
+    transform: scale(1.2);
 }
