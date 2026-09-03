@@ -93,16 +93,14 @@ header .container {
 .sobre {
     display: flex;
     justify-content: center;
+    padding: 1.5rem;
     gap: 6rem;
-    z-index: -1;
-    position: relative;
     margin-top: 16rem;
     padding: 4rem 2rem;
     align-items: center;
-    flex-wrap: wrap;
     font-family: 'Familjen Grotesk';
     font-size: 1.2rem;
-    background-color: #ffb15c;
+    background-color: #fff3cd;
 }
 
 .sobre-texto {
@@ -175,9 +173,14 @@ header .container {
 }
 
 .card-body {
+    background-image: url(../images/fundo_banner3_cardapio.png);
     height: 270px;
     text-align: center;
     padding: 2rem 1.5rem;
+}
+.card .btn:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 .card-title {
@@ -232,7 +235,6 @@ footer {
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    padding: 1rem;
     font-size: 1.2rem;
     border-top: 3px solid var(--line-color2);
 }
@@ -251,6 +253,7 @@ footer ul {
     margin-bottom: 1.5rem;
     gap: 3rem;
     flex-wrap: wrap;
+    padding-left: 0;
 }
 
 .botoes {
