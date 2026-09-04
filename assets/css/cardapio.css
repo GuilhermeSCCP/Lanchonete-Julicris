@@ -4,21 +4,65 @@
     box-sizing: border-box;
 }
 
-
-
 :root{
-    --bg-header: #db8400;
+    --bg-nav: rgb(88, 54, 21);
+    --bg-button: #db8400;
     --bg-section: #6b4425;
     --bg-caixas:rgba(0, 0, 0, 0.5);
     --bg-footer: rgb(104, 63, 25);
     --bg-botoes: rgba(0, 0, 0, 0.8);
     --text-color: #ffffff;
     --text-color2: #000000; 
+    --text-color3: rgb(240, 145, 2);
     --line-color: #a37f48;
     --line-color2: rgba(212, 198, 150, 0.404);
+    --line-color3: rgb(240, 145, 2);
+    --julicris: rgb(255, 123, 0, 1);
     --whatsapp: linear-gradient(135deg, #075e54, #128c7e, #25d366);
     --instagram: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
     --facebook: linear-gradient(135deg, #0062e0, #00c6ff); 
+}
+
+.nav2{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+.mynav{
+    background-color: var(--bg-nav); 
+}
+.nav-link{
+  position: relative;
+}
+.nav-link{
+    color:var(--text-color3) !important;
+    padding: 10px;
+    transition: 3s ease-in-out;
+}
+.nav-link::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: var(--line-color3);
+  transition: width .25s ease;  
+}
+.nav-link:hover::after{
+  width: 100%;
+}
+.logo{
+    color:var(--julicris) !important;
+    font-size: 30px;
+    font-family: "Nunito";
+    text-decoration: none;
+}
+.navbar .container.p-3{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: center;
 }
 
 header{
@@ -56,7 +100,7 @@ main{
     justify-content: space-evenly;
     gap: 5rem 3rem;
     align-items: center;
-    padding: 50px 10px 10px 10px;
+    padding: 4rem 0.8rem 4rem 0.8rem;
     margin: 0 3.5rem 1.5rem;
     border-radius: 1rem;
 }
@@ -69,19 +113,20 @@ main{
     justify-content: space-evenly;
     gap: 5rem 3rem;
     align-items: center;
-    padding: 50px 10px 10px 10px;
+    padding: 4rem 0.8rem 4rem 0.8rem;
     margin: 0 3.5rem;
     border-radius: 1rem
 }
 
 .card{
+    width: 18rem;
     border-radius: 16px !important;
     border: 2px solid var(--line-color) !important;
 }
 
 .card-img-top{
     height: 16rem;
-    border-radius: 16px 16px 0 0 !important;
+    border-radius: 1rem 1rem 0 0 !important;
 }
 
 .card-body {
@@ -90,10 +135,18 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    border-radius: 0 0 14px 14px;
+    border-radius: 0 0 0.9rem 0.9rem;
 }
 .card-body p, .card-body h5{
     color: var(--text-color);
+}
+.btn-primary{
+    background-color: var(--text-color2);
+    border: 1px solid var(--bg-button);
+}
+.btn:hover{
+    background-color: var(--bg-button);
+    border: 1px solid var(--bg-button);
 }
 footer {
     background-color: var(--bg-footer);
@@ -104,8 +157,8 @@ footer {
     text-align: center;
     justify-content: center;
     flex-direction: column;
-    padding: 30px;
-    font-size: 20px;
+    padding: 2rem;
+    font-size: 1.2rem;
     border-top: 3px solid var(--line-color2);
 }
 
@@ -135,27 +188,48 @@ footer ul {
     padding: 1rem;
     border-radius: 1rem;
     font-size: 2.5rem;
+    transition:0.3s ease-in-out;
 }
 .fa-instagram{
     background: var(--instagram);
     padding: 1rem;
     border-radius: 1rem;
     font-size: 2.5rem;
+    transition: 0.3s ease-in-out;
 }
 .fa-facebook{
     background: var(--facebook);
     padding: 1rem;
     border-radius: 1rem;
     font-size: 2.5rem;
+    transition: 0.3s ease-in-out;
+}
+.fa-facebook:hover, .fa-instagram:hover, .fa-whatsapp:hover{
+    transform:scale(1.2);
 }
 @media (max-width: 768px){
     header{
         padding: 5rem 0 5rem 0;
     }
     .card-body{
-        height: 10rem;
+        height: 14rem;
+        font-size: 0.8rem;
     }
+    .card-body h5{
+        font-size: 1.2rem;
+    }
+
     .card-img-top{
         height: 10rem;
+    }
+    .card{
+        width: 10rem;
+    }
+    .caixas_1, .caixas_2, .caixas_3{
+        margin: 0 1rem 6rem;
+        gap: 2rem 1.5rem;
+    }
+    main{
+        padding: 0 0 1rem 0;
     }
 }

@@ -4,48 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b433562c70.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/cardapio.css">
+    
     <link rel="icon" href="assets/images/logo_julicris.jpeg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/cardapio.css">
     <title>Lanchonete Julicris | Cardápio</title>
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
+    <nav class="navbar navbar-expand-lg mynav ">
+        <div class="container p-3">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 nav2 titulos">
+                
+                <li><a href="index.html" class="logo">Julicris</a></li>
+                <li><a href="#lanches" class="nav-link">Lanches</a></li>
+                <li><a href="#salgados_festa" class="nav-link">Salgados de Festa</a></li>
+                <li><a href="#bebidas" class="nav-link">Bebidas</a></li>
+                <li><a href="#redes_sociais" class="nav-link">Redes Sociais</a></li>
+            </ul>
         </div>
     </nav>
     <header>
@@ -54,9 +38,9 @@
     </header>
     <main>
         <section>
-            <h2 id="lanches">Lanches</h2>
+            <h2 id="lanches"><section>Lanches</section></h2>
             <div class="caixas_1">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/coxinha.jpeg" class="card-img-top" alt="Coxinha de frango">
                     <div class="card-body">
                         <h5 class="card-title">Coxinha</h5>
@@ -64,7 +48,7 @@
                         <a href="#" class="btn btn-primary">Peça já!</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/empada de frango.webp"  class="card-img-top" alt="empada de frango">
                     <div class="card-body">
                         <h5 class="card-title">Empada de Frango</h5>
@@ -72,7 +56,7 @@
                         <a href="#" class="btn btn-primary">Peça já!</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/mini-pizza.jpeg" class="card-img-top" alt="Mini Pizza">
                     <div class="card-body">
                         <h5 class="card-title">Mini-pizza</h5>
@@ -80,7 +64,7 @@
                         <a href="#" class="btn btn-primary">Peça já!</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/enroladinho de salsicha.jpeg" class="card-img-top" alt="Enroladinho de Salsicha">
                     <div class="card-body">
                         <h5 class="card-title">Enroladinho de Salsicha</h5>
@@ -88,7 +72,7 @@
                         <a href="#" class="btn btn-primary">Peça já!</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/cigarrete.jpg" class="card-img-top" alt="Cigarrete">
                     <div class="card-body">
                         <h5 class="card-title">Cigarrete</h5>
@@ -96,7 +80,7 @@
                         <a href="#" class="btn btn-primary">Peça já!</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/assado de carne.jpeg" class="card-img-top" alt="Assado de carne">
                     <div class="card-body">
                         <h5 class="card-title">Assado de Carne</h5>
@@ -109,7 +93,7 @@
         <section>
             <h2 id="salgados_festa">Salgados de festa</h2>
             <div class="caixas_2">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/bolinha_de_presunto.jpeg" class="card-img-top" alt="Bolinha de presunto e queijo">
                     <div class="card-body">
                         <h5 class="card-title">Bolinha de presunto e queijo</h5>
@@ -118,7 +102,7 @@
                         <a href="#" class="btn btn-primary">Peça já</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/bolinha_de_queijo.jpeg" class="card-img-top" alt="Bolinha de quiejo">
                     <div class="card-body">
                         <h5 class="card-title">Bolinha de queijo</h5>
@@ -127,7 +111,7 @@
                         <a href="#" class="btn btn-primary">Peça já</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/mini_coxinha.jpeg" class="card-img-top" alt="Mini-Coxinha">
                     <div class="card-body">
                         <h5 class="card-title">Mini-Coxinha</h5>
@@ -136,7 +120,7 @@
                         <a href="#" class="btn btn-primary">Peça já</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/miniquibe-recheado-peito-peru.jpg" class="card-img-top" alt="Mini-quibe">
                     <div class="card-body">
                         <h5 class="card-title">Mini Quibe</h5>
@@ -145,7 +129,7 @@
                         <a href="#" class="btn btn-primary">Peça já</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/mini_cigarrete.jpeg" class="card-img-top" alt="Mini cigarrete">
                     <div class="card-body">
                         <h5 class="card-title">Mini cigarrete</h5>
@@ -154,7 +138,7 @@
                         <a href="#" class="btn btn-primary">Peça já</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/risole.jpeg" class="card-img-top" alt="Mini Risole">
                     <div class="card-body">
                         <h5 class="card-title">Mini Risole</h5>
@@ -163,7 +147,7 @@
                         <a href="#" class="btn btn-primary">Peça já</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/enroladinho de salsicha.jpeg" class="card-img-top" alt="Enroladinho de salsicha">
                     <div class="card-body">
                         <h5 class="card-title">Enroladinho de salsicha</h5>
@@ -172,7 +156,7 @@
                         <a href="#" class="btn btn-primary">Peça já</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/churros.jpg" class="card-img-top" alt="Mini Churros">
                     <div class="card-body">
                         <h5 class="card-title">Mini Churros</h5>
@@ -184,9 +168,9 @@
             </div>
         </section>
         <section>
-            <h2>Bebidas</h2>
+            <h2 id="bebidas">Bebidas</h2>
             <div class="caixas_3">
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/coca_normal.jpg" class="card-img-top" alt="Coca Cola de lata">
                     <div class="card-body">
                         <h5 class="card-title">Coca-cola</h5>
@@ -195,7 +179,7 @@
                         <a href="#" class="btn btn-primary">Peça já</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/coca_vidro.jpg" class="card-img-top" alt="Coca cola garrafa de vidro">
                     <div class="card-body">
                         <h5 class="card-title">Coca-cola</h5>
@@ -204,7 +188,7 @@
                         <a href="#" class="btn btn-primary">Peça já</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/coca_zero.jpg" class="card-img-top" alt="Coca-cola zero">
                     <div class="card-body">
                         <h5 class="card-title">Coca-cola Zero</h5>
@@ -213,7 +197,7 @@
                         <a href="#" class="btn btn-primary">Peça já</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/sprite.jpg" class="card-img-top" alt="Sprite">
                     <div class="card-body">
                         <h5 class="card-title">Sprite 350ml</h5>
@@ -222,7 +206,7 @@
                         <a href="#" class="btn btn-primary">Peça já</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/guarana_kuat.jpg" class="card-img-top" alt="Guaraná Kuat">
                     <div class="card-body">
                         <h5 class="card-title">Kuat guaraná 350ml</h5>
@@ -231,7 +215,7 @@
                         <a href="#" class="btn btn-primary">Peça já</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/fanta_guarana.jpg" class="card-img-top" alt="Fanta Guaraná">
                     <div class="card-body">
                         <h5 class="card-title">Fanta Guaraná 350ml</h5>
@@ -240,7 +224,7 @@
                         <a href="#" class="btn btn-primary">Peça já</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/fanta_uva.jpg" class="card-img-top" alt="Fanta Uva">
                     <div class="card-body">
                         <h5 class="card-title">Fanta Uva 350ml</h5>
@@ -249,7 +233,7 @@
                         <a href="#" class="btn btn-primary">Peça já</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="assets/images/fanta_laranja.jpg" class="card-img-top" alt="Fanta Laranja">
                     <div class="card-body">
                         <h5 class="card-title">Fanta Laranja 350ml</h5>
@@ -263,7 +247,7 @@
     </main>
     <footer>
         <ul>
-            <li><h5>© 2026 JULICRIS - Todos Direitos Reservados </h5></li>
+            <li><h5 id="redes_sociais">© 2026 JULICRIS - Todos Direitos Reservados </h5></li>
             <li>
                 <div class="botoes">
                     <a href="https://api.whatsapp.com/send?phone=553291640246" target="_blank"><h1 class="fa-brands fa-whatsapp"></h1></a>
